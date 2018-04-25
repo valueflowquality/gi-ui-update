@@ -1,14 +1,14 @@
 {
   "author": "GoIncremental",
-  "name": "gi-ui",
-  "version": "1.6.1",
+  "name": "gi-ui-update",
+  "version": "1.6.2",
   "main": "./server/index.coffee",
   "repository": {
     "type": "git",
-    "url": "git://github.com/GoIncremental/gi-ui.git"
+    "url": "git://github.com/valueflowquality/gi-ui-update.git"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.9.1"
   },
   "dependencies": {},
   "devDependencies": {
