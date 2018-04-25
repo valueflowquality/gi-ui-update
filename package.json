@@ -1,7 +1,7 @@
 {
   "author": "GoIncremental",
   "name": "gi-ui-update",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "main": "./server/index.coffee",
   "repository": {
     "type": "git",
