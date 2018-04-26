@@ -1,5 +1,5 @@
 {
-  "name": "gi-ui",
+  "name": "gi-ui-updated",
   "version": "1.6.1",
   "main": "./dist/gi-ui.js",
   "devDependencies": {
