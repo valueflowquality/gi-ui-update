@@ -1,6 +1,6 @@
 {
   "name": "gi-ui-updated",
-  "version": "1.6.3",
+  "version": "1.6.31",
   "main": "./dist/gi-ui.js",
   "devDependencies": {
     "textAngular": "~1.3.11",
@@ -11,7 +11,7 @@
     "angular-ui-tree": "~2.2.0",
     "ngprogress": "~1.0.7",
     "angular-spinner": "~0.6.1",
-    "gi-util-updated": "^1.9.8"
+    "gi-util-updated": "^1.9.81"
   },
   "dependencies": {
     "bootstrap-sass": "3.3.4",
