@@ -21486,7 +21486,8 @@ angular.module('gi.ui').directive('giOverflow', [
     return {
       restrict: 'A',
       scope: {
-        giOverflow: '='
+        giOverflow: '=',
+        isOverflow: '='
       },
       link: function(scope, elem, attrs) {
         var buildEllipsis, doWork, isOverflow, isTruncated, renderControls, showingAll, toggle;
@@ -21523,9 +21524,12 @@ angular.module('gi.ui').directive('giOverflow', [
                 appendLess = '';
               }
               elem.html('<div class="col-xs-12 gi-over gi-over-body">' + text + '</div>');
+              scope.isOverflow = false;
               if (showingAll) {
                 elem.html('<div class="col-xs-12 gi-over gi-over-body">' + text + '</div>' + appendLess);
+                scope.isOverflow = true;
               } else if (isOverflow(elem)) {
+                scope.isOverflow = true;
                 needsFlow = true;
                 bindArrayStartingLength = bindArray.length;
                 initialMaxHeight = elem[0].clientHeight;

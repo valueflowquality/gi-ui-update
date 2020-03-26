@@ -4,6 +4,7 @@ angular.module('gi.ui').directive 'giOverflow'
   restrict: 'A'
   scope:
     giOverflow: '='
+    isOverflow: '='
   link: (scope, elem, attrs) ->
     isTruncated = false
     showingAll = false
@@ -38,11 +39,14 @@ angular.module('gi.ui').directive 'giOverflow'
             appendLess = ''
 
           elem.html('<div class="col-xs-12 gi-over gi-over-body">' + text + '</div>')
+          scope.isOverflow = false
 
           # If text has overflow
           if showingAll
             elem.html('<div class="col-xs-12 gi-over gi-over-body">' + text + '</div>' + appendLess)
+            scope.isOverflow = true
           else if isOverflow(elem)
+            scope.isOverflow = true
             needsFlow = true
             bindArrayStartingLength = bindArray.length
             initialMaxHeight = elem[0].clientHeight
